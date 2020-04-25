@@ -7,4 +7,4 @@ client = discord.client()
 async def on_ready():
     print("Sẵn sàng hoạt động!")
 
-client.run(os.environ['WHO_KNOW'])
+client.run(os.environ['DMBOT'])
