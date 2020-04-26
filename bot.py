@@ -20,4 +20,6 @@ async def on_message(message):
         if "chào" in message.content.lower():
             await message.channel.send("Chào bạn tui!")
 
-bot.run(os.environ['DITMEMAY'])
+bot = commands.Bot(command_prefix='*')
+
+Bot.run(os.environ['DITMEMAY'])
