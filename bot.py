@@ -19,7 +19,7 @@ async def on_message(message):
             await message.channel.send("OwO")
         if "chào" in message.content.lower():
             await message.channel.send("Chào bạn tui!")
-        if "Hello" in message.content.lower():
+        if "hello" in message.content.lower():
             await message.channel.send("World!")
 
 client.run(os.environ['DITMEMAY'])
