@@ -19,7 +19,9 @@ async def on_message(message):
             await message.channel.send("OwO")
         if "chào" in message.content.lower():
             await message.channel.send("Chào bạn tui!")
+        if "Hello" in message.content.lower():
+            await message.channel.send("World!")
 
 bot = commands.Bot(command_prefix='*')
 
-Bot.run(os.environ['DITMEMAY'])
+client.run(os.environ['DITMEMAY'])
