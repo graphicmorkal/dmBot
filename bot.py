@@ -1,3 +1,4 @@
+# idk nhưng sao bác lại đọc được dòng này vậy hic :<
 import discord
 import os
 
@@ -19,4 +20,4 @@ async def on_message(message):
         if "chào" in message.content.lower():
             await message.channel.send("Chào bạn tui!")
 
-client.run(os.environ['DITMEMAY'])
+bot.run(os.environ['DITMEMAY'])
