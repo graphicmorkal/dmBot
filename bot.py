@@ -22,4 +22,4 @@ async def on_message(message):
         if "hello" in message.content.lower():
             await message.channel.send("World!")
 
-client.run(os.environ['DITMEMAY'])
+bot.run(os.environ['DITMEMAY'])
