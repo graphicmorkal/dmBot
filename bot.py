@@ -36,7 +36,7 @@ async def on_message(message):
             await message.channel.send("Hello World!")
         # Check nếu là admin (chạy code ở dưới)
         if authorIsAdmin(message):
-            if message.content.startswith('$clear'):
+            if message.content.startswith('t!clear'):
                 con = message.content.split()
                 msg = []
                 lists = await message.channel.history(limit=int(con[1])+1).flatten()
@@ -45,7 +45,7 @@ async def on_message(message):
                 await message.channel.delete_messages(msg)
                 await message.channel.send(f"{message.author.mention} Bạn đã xoá %s tin nhắn!" % con[1])
 
-bot = commands.Bot(command_prefix='%')
+bot = commands.Bot(command_prefix='t!')
 
 client.run(os.environ['DITMEMAY'])
 
