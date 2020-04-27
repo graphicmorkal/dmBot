@@ -34,6 +34,8 @@ async def on_message(message):
             await message.channel.send("Chào bạn tui!")
         if "hello" in message.content.lower():
             await message.channel.send("Hello World!")
+        if "wibu" in message.content.lower():
+            await message.channel.send("Nói gì wibu đấy, cho lên đảo giờ!")
         # Check nếu là admin (chạy code ở dưới)
         if authorIsAdmin(message):
             if message.content.startswith('t!clear'):
@@ -43,7 +45,7 @@ async def on_message(message):
                 for x in lists:
                     msg.append(x)
                 await message.channel.delete_messages(msg)
-                await message.channel.send(f"{message.author.mention} Bạn đã xoá %s tin nhắn!" % con[1])
+                await message.channel.send(f"{message.author.mention} đã xoá %s tin nhắn!" % con[1])
 
 bot = commands.Bot(command_prefix='t!')
 
