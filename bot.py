@@ -43,6 +43,6 @@ async def on_message(message):
                 await message.channel.delete_messages(msg)
                 await message.channel.send(f"{message.author.mention} Bạn đã xoá %s tin nhắn!" % con[1])
 
-bot = commands.Bot(command_prefix='%')z
+bot = commands.Bot(command_prefix='%')
 
 client.run(os.environ['DITMEMAY'])
