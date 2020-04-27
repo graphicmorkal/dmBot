@@ -2,6 +2,8 @@
 import discord
 import os
 
+from discord.ext import commands
+
 inAdmin = os.environ['ADMIN']
 
 def authorIsAdmin(msg):
@@ -46,3 +48,11 @@ async def on_message(message):
 bot = commands.Bot(command_prefix='%')
 
 client.run(os.environ['DITMEMAY'])
+
+
+
+#------------------------
+# chỗ này để học nghề, đừng động vào, làm ơn, và cảm ơn.
+#------------------------
+
+
