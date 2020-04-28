@@ -60,6 +60,3 @@ client.run(os.environ['DITMEMAY'])
 #------------------------
 # chỗ này để học nghề, đừng động vào, làm ơn, và cảm ơn.
 #------------------------
-
-
-    embed=discord.Embed(title="**Ao làng Đông Lào - LoR**", description=f"Chưa có thông tin!", color=0xd34e05)
