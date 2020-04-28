@@ -49,7 +49,7 @@ async def on_message(message):
                 await message.channel.delete_messages(msg)
                 await message.channel.send(f"{message.author.mention} đã xoá %s tin nhắn!" % con[1])
         if message.content.startswith('t!aolang'):
-            embed=discord.Embed(title="**Ao làng Đông Lào - LoR**", description=f"Chưa có thông tin!", color=0xd34e05)
+            await message.channel.send('**Chưa có thông tin gì về giải ao làng sắp tới**, nên cứ hóng đi nhé :)')
 
 bot = commands.Bot(command_prefix='t!')
 
@@ -60,3 +60,5 @@ client.run(os.environ['DITMEMAY'])
 #------------------------
 # chỗ này để học nghề, đừng động vào, làm ơn, và cảm ơn.
 #------------------------
+
+
