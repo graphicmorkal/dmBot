@@ -48,6 +48,8 @@ async def on_message(message):
                     msg.append(x)
                 await message.channel.delete_messages(msg)
                 await message.channel.send(f"{message.author.mention} đã xoá %s tin nhắn!" % con[1])
+        if message.content.startswith('t!aolang'):
+            await message.channel.send('Chưa có thông tin gì về giải ao làng sắp tới, nên cứ hóng đi nhé :)')
 
 bot = commands.Bot(command_prefix='t!')
 
