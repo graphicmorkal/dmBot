@@ -51,7 +51,7 @@ async def on_message(message):
                 await message.channel.delete_messages(msg)
                 await message.channel.send(f"{message.author.mention} đã xoá %s tin nhắn!" % con[1])
         if message.content.startswith('t!aolang'):
-            await message.channel.send('**Giải Ao Làng Đông Lào lần thứ 3**\n*Thời gian tổ chức:* từ ** / ** đến ** / **  \n__Giải được chia làm 2 bảng đấu:__\n - Bảng vinh quang: Dành cho những người rank Kin cương trở xuống\n - Bảng siêu sao: Dành cho những người Rank master và người vào chung kết trong bảng vinh quang.\n*Cơ cấu giải thưởng:* 10 chai sting dành cho vô địch bảng (10k/chai)')
+            await message.channel.send('**Giải Ao Làng Đông Lào lần thứ 3**\n*Thời gian tổ chức:* từ **5/5** đến **7/5**  \n__Giải được chia làm 2 bảng đấu:__\n - Bảng vinh quang: Dành cho những người rank Kin cương trở xuống\n - Bảng siêu sao: Dành cho những người Rank master và người vào chung kết trong bảng vinh quang.\n*Cơ cấu giải thưởng:* 10 chai sting dành cho vô địch bảng (10k/chai)')
 
 bot = commands.Bot(command_prefix='t!')
 
