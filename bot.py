@@ -58,6 +58,9 @@ async def on_message(message):
                 for status in ctx[1:]:
                     if status == 'info':
                         await message.channel.send('Cần gì phải thêm chữ info, nhập t!aolang không cũng đủ mà :)')
+                for status in ctx[1:]:
+                    if status == "thamgia":
+                        await message.channel.send('Đăng ký ngay ở #đăng-kí theo mẫu sau:\n*Tên discord*    |   *Tên trong game*  |  *Rank*\nTroller#4495 | WjbuLord#7749 | Bạc 3')
                         
 
 
