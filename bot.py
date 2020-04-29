@@ -36,7 +36,9 @@ async def on_message(message):
             await message.channel.send("Hello World!")
         if "wibu" in message.content.lower():
             await message.channel.send("Nói gì wibu đấy?")
-        if "mọe " in message.content.lower():
+        if "mọe" in message.content.lower():
+            await message.channel.send("Lỗi chính tả kìa...\nSửa nhanh kẻo bay màu giờ!!!")
+        if "trính tả" in message.content.lower():
             await message.channel.send("Lỗi chính tả kìa...\nSửa nhanh kẻo bay màu giờ!!!")
         # Check nếu là admin (chạy code ở dưới)
         if authorIsAdmin(message):
