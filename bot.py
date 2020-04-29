@@ -54,6 +54,12 @@ async def on_message(message):
             ctx = message.content.split()
             if (len(ctx) < 2):
                 await message.channel.send('**Giải Ao Làng Đông Lào lần thứ 3**\n*Thời gian tổ chức:* từ **5/5** đến **7/5**  \n__Giải được chia làm 2 bảng đấu:__\n - Bảng vinh quang: Dành cho những người rank Kin cương trở xuống\n - Bảng siêu sao: Dành cho những người Rank master và người vào chung kết trong bảng vinh quang.\n*Cơ cấu giải thưởng:* 10 chai sting dành cho vô địch bảng (10k/chai)')
+            else:
+                for status in ctx[1:]:
+                    if status == 'info':
+                        await message.channel.send('Cần gì phải thêm chữ info, nhập t!aolang không cũng đủ mà :)')
+                        
+
 
 bot = commands.Bot(command_prefix='t!')
 
