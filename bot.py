@@ -41,8 +41,8 @@ async def on_message(message):
         if "trính tả" in message.content.lower():
             await message.channel.send("Lỗi chính tả kìa...\nSửa nhanh kẻo bay màu giờ!!!")
         # Check nếu là admin (chạy code ở dưới)
-        if authorIsAdmin(message):
-            if message.content.startswith('t!clear'):
+        if message.content.startswith('t!clear'):
+            if authorIsAdmin(message):
                 con = message.content.split()
                 msg = []
                 lists = await message.channel.history(limit=int(con[1])+1).flatten()
@@ -50,6 +50,8 @@ async def on_message(message):
                     msg.append(x)
                 await message.channel.delete_messages(msg)
                 await message.channel.send(f"{message.author.mention} đã xoá %s tin nhắn!" % con[1])
+            else:
+                await message.channel.send(f"Ai cho {message.author.mention} cái quyền để xóa %s tin nhắn vậy?" % con[1])
         if message.content.startswith('t!aolang'):
             ctx = message.content.split()
             if (len(ctx) < 2):
