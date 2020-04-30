@@ -65,10 +65,6 @@ async def on_message(message):
             ctx = message.content.split()
             if (len(ctx) < 2):
                 await message.channel.send('Các lệnh hiện có:\n\nt!aolang (info/thamgia) : Các lệnh về Ao làng Đông lào\n\n||Có thế thôi à :<||')
-        if message.content.startswith('t!ran'):
-            arr = [‘LL’,’MM’,’VV’]
-            tar = random.randint(0, len(arr) - 1)
-            await message.channel.send('Kết quả là %s !' %s tar)
 
 
 
