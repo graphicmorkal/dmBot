@@ -44,7 +44,7 @@ async def on_message(message):
         # Check nếu là admin (chạy code ở dưới)
         if message.content.startswith('t!clear'):
             con = message.content.split()
-            await message.channel.send("Ai cho bác cái quyền để xóa tin nhắn vậy?")
+            await message.channel.send("Ai cho bác cái quyền để xóa tin nhắn vậy {message.author.mention}?")
             if authorIsAdmin(message):
                 msg = []
                 lists = await message.channel.history(limit=int(con[1])+1).flatten()
