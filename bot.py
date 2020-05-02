@@ -43,13 +43,13 @@ async def on_message(message):
                 await message.channel.send("Mà khoan, bác có **quyền lực** rồi mà?")
         # Check nếu là admin (chạy code ở dưới)
         if message.content.startswith('t!clear'):
-            await message.channel.send(f"Ai cho {message.author.mention} cái quyền để xóa %s tin nhắn vậy?" % con[1])
-            if authorIsAdmin(message):
-                con = message.content.split()
+            con = message.content.split()
                 msg = []
                 lists = await message.channel.history(limit=int(con[1])+1).flatten()
                 for x in lists:
                     msg.append(x)
+            await message.channel.send("Ai cho bác cái quyền để xóa %s tin nhắn vậy?" % con[1])
+            if authorIsAdmin(message):
                 await message.channel.delete_messages(msg)
                 await message.channel.send(f"À nhầm, xin lỗi {message.author.mention} nhé! Xoá %s tin nhắn rồi đấy!" % con[1])
         if message.content.startswith('t!aolang'):
