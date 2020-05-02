@@ -38,7 +38,9 @@ async def on_message(message):
         if "yo" in message.content.lower():
             await message.channel.send("Yo!")
         if "làm sao để có quyền lực" in message.content.lower():
-            await message.channel.send("Biết đâu được...?") or await message.channel.send("Chịu...")
+            await message.channel.send("Biết đâu được...?")
+            if authorIsAdmin(message)
+                await message.channel.send("Mà khoan, bác có **quyền lực** rồi mà?")
         # Check nếu là admin (chạy code ở dưới)
         if message.content.startswith('t!clear'):
             if authorIsAdmin(message):
