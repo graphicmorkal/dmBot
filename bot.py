@@ -46,6 +46,7 @@ async def on_message(message):
             con = message.content.split()
             await message.channel.send("Ai cho bác cái quyền để xóa tin nhắn vậy?")
             if authorIsAdmin(message):
+                con = message.content.split()
                 msg = []
                 lists = await message.channel.history(limit=int(con[1])+1).flatten()
                 for x in lists:
