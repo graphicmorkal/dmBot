@@ -52,7 +52,6 @@ async def on_message(message):
                     msg.append(x)
                 await message.channel.delete_messages(msg)
                 await message.channel.send(f"À nhầm, xin lỗi {message.author.mention} nhé! Xoá %s tin nhắn rồi đấy!" % con[1])
-            else:
         if message.content.startswith('t!aolang'):
             ctx = message.content.split()
             if (len(ctx) < 2):
