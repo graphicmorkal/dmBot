@@ -65,7 +65,7 @@ async def on_message(message):
                         await message.channel.send('Tiếc quá {message.author.mention}, giải đấu đã đóng đăng ký rồi, hẹn lần sau nhé!')
                     if status == "bangdau":
                         ctx = message.content.split()
-                        if (len(ctx) < 2):
+                        if (len(ctx) < 3):
                             await message.channel.send('Bạn nhập thêm vinhquang hoặc sieusao để nhận thông tin cho bảng tương ứng nhé!')
                         else:
                             for status in ctx[1:]:
