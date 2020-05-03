@@ -60,7 +60,7 @@ async def on_message(message):
             else:
                 for status in ctx[1:]:
                     if status == 'info':
-                        await message.channel.send('**Giải Ao Làng Đông Lào lần thứ 3 / SEA**\n*Thời gian tổ chức:* từ **8/5** đến **10/5**  \n__Giải được chia làm 2 bảng đấu:__\n - Bảng vinh quang: Dành cho những người rank Kin cương trở xuống\n - Bảng siêu sao: Dành cho những người Rank master và người vào chung kết trong bảng vinh quang.\n*Cơ cấu giải thưởng:* 10 chai sting dành cho vô địch bảng (10k/chai)')
+                        await message.channel.send('**Giải Ao Làng Đông Lào lần thứ 3 / SEA**\n*Thời gian tổ chức:* từ **8/5** đến **10/5**  \n__Giải được chia làm 2 bảng đấu:__\n - Bảng vinh quang: Dành cho những người rank Kin cương trở xuống\n - Bảng siêu sao: Dành cho những người Rank master và người vào chung kết trong bảng vinh quang.\n*Tổng cơ cấu giải thưởng:* 10 ổ bánh mì thịt chả trứng 20k chia đều cho 2 vô địch bảng.')
                     if status == "thamgia":
                         await message.channel.send('Tiếc quá {message.author.mention}, giải đấu đã đóng đăng ký rồi, hẹn lần sau nhé!')
                     if status == "bangdau":
