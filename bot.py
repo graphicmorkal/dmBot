@@ -62,11 +62,17 @@ async def on_message(message):
                     if status == 'info':
                         await message.channel.send('**Giải Ao Làng Đông Lào lần thứ 3 / SEA**\n*Thời gian tổ chức:* từ **8/5** đến **10/5**  \n__Giải được chia làm 2 bảng đấu:__\n - Bảng vinh quang: Dành cho những người rank Kin cương trở xuống\n - Bảng siêu sao: Dành cho những người Rank master và người vào chung kết trong bảng vinh quang.\n*Cơ cấu giải thưởng:* 10 chai sting dành cho vô địch bảng (10k/chai)')
                     if status == "thamgia":
-                        await message.channel.send('{message.author.mention} nên đăng ký ngay ở #đăng-kí theo mẫu sau:\n*Tên discord*    |   *Tên trong game*  |  *Rank*\nTroller#4495 | WjbuLord#7749 | Bạc 3\n(Link)[https://discordapp.com/channels/695461977438421004/705012199277461505/705017959709409280]')
+                        await message.channel.send('Tiếc quá {message.author.mention}, giải đấu đã đóng đăng ký rồi, hẹn lần sau nhé!')
+                    if status == "bangdau":
+                        for status in ctx[1:]:
+                            if status == "vinhquang":
+                                await message.channel.send('Chưa có thông tin!')
+                            if status == "sieusao":
+                                await message.channel.send('Chưa có thông tin!')
         if message.content.startswith('t!help'):
             ctx = message.content.split()
             if (len(ctx) < 2):
-                await message.channel.send('Các lệnh hiện có:\n\nt!aolang (info/thamgia) : Các lệnh về Ao làng Đông lào\n\n||Có thế thôi à :<||')
+                await message.channel.send('Các lệnh hiện có:\n\nt!aolang (info/thamgia/bangdau) : Các lệnh về Ao làng Đông lào\n\n||Có thế thôi à :<||')
 
 
 
