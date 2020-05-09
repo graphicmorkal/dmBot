@@ -6,8 +6,8 @@ import random
 from discord.ext import commands
 
 inAdmin = os.environ['ADMIN']
-inAdmin = 'Admin'
-inAdmin = 'Mod'
+inAdmin = os.environ['ADMIN1']
+inAdmin = os.environ['ADMIN2']
 
 def authorIsAdmin(msg):
     identified = False
