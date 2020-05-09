@@ -71,7 +71,7 @@ async def on_message(message):
         if message.content.startswith('t!help'):
             ctx = message.content.split()
             if (len(ctx) < 2):
-                await message.channel.send('Các lệnh hiện có:\n\nt!aolang (info/thamgia/bangdau) : Các lệnh về Ao làng Đông lào\n\n||Có thế thôi à :<||')
+                await message.channel.send('Các lệnh hiện có:\n**LOR ĐÔNG LÀO:**\nt!aolang (info/thamgia/bangdau) : Các lệnh về Ao làng Đông lào\n\n**TỔNG THỂ:**\nt!clear <X> : xóa X tin nhắn\n\n||Có thế thôi à :<||')
 
 
 
