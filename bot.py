@@ -2,6 +2,7 @@
 import discord
 import os
 import random
+import time
 
 from discord.ext import commands
 
@@ -31,6 +32,10 @@ async def on_message(message):
             await message.channel.send("UwU")
         if "owo" in message.content.lower():
             await message.channel.send("OwO")
+        if "sai chính tả" in message.content.lower():
+            await message.channel.send("https://cdn.discordapp.com/attachments/665774320911515685/708879693545472080/GIU_GIN_SU_TRONG_SANG_CUA_TIENG_VIET.png")
+            time.sleep(5)
+            await message.channel.send("https://cdn.discordapp.com/attachments/665774320911515685/708879643922530405/CANH_SAT_CHINH_TA.png")
         if "làm sao để có quyền lực" in message.content.lower():
             await message.channel.send("Biết đâu được...?")
             if authorIsAdmin(message):
