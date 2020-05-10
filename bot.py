@@ -33,7 +33,8 @@ async def on_message(message):
         if "owo" in message.content.lower():
             await message.channel.send("OwO")
         if "sai chính tả" in message.content.lower():
-            await message.channel.send("https://cdn.discordapp.com/attachments/665774320911515685/708879643922530405/CANH_SAT_CHINH_TA.png")
+            if "bắt" in message.content.lower():
+                await message.channel.send("https://cdn.discordapp.com/attachments/665774320911515685/708879643922530405/CANH_SAT_CHINH_TA.png")
         if "làm sao để có quyền lực" in message.content.lower():
             await message.channel.send("Biết đâu được...?")
             if authorIsAdmin(message):
