@@ -61,7 +61,8 @@ async def on_message(message):
             time.sleep(1)
             await message.channel.send("UwU")
             time.sleep(1)
-            await message.channel.send("UwU")
+            await message.channel.send("https://tenor.com/view/dr-stone-smiling-senku-oops-my-bad-sorry-gif-16445162")
+
         if "uwu" in message.content.lower():
             await message.channel.send("UwU")
         if "owo" in message.content.lower():
