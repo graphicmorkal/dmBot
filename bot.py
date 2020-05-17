@@ -3,7 +3,7 @@ import discord
 import os
 import random
 import time
-from .utils import check_quyen
+from utils import check_quyen
 from discord.ext import commands
 
 inAdmin = os.environ['ADMIN']
