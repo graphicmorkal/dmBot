@@ -62,12 +62,13 @@ async def on_message(message):
         if "owo" in message.content.lower():
             await message.channel.send("OwO")
         #bổ trợ emoji
-        if message.content.startswith(':ryugiohhh:'):
+        if ":ryugiohhh:" in message.content.lower():
             await message.channel.send('https://i.imgur.com/IrzIeKa.png')
-        if message.content.startswith(':rhype:'):
+        if ":rhype:" message.content.lower():
             await message.channel.send('https://i.imgur.com/EqCXElJ.png')
         if "sai chính tả" in message.content.lower():
             if "bắt" in message.content.lower():
+                if "." in message.content.lower():
                 await message.channel.send("https://cdn.discordapp.com/attachments/665774320911515685/708879643922530405/CANH_SAT_CHINH_TA.png")
         if "làm sao để có quyền lực" in message.content.lower():
             await message.channel.send("Biết đâu được...?")
