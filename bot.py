@@ -64,7 +64,7 @@ async def on_message(message):
         #bổ trợ emoji
         if "ryugiohhh" in message.content.lower():
             await message.channel.send('https://i.imgur.com/IrzIeKa.png')
-        if "rhype" message.content.lower():
+        if "rhype" in message.content.lower():
             await message.channel.send('https://i.imgur.com/EqCXElJ.png')
         if "sai chính tả" in message.content.lower():
             if "bắt" in message.content.lower():
