@@ -71,8 +71,6 @@ async def on_message(message):
                 await message.channel.send("Mà khoan, bác có **quyền lực** rồi mà?")
             if authorIsBuNhin(message):
                 await message.channel.send("Bù nhìn à? Khó à nha....")
-            else:
-                await message.channel.send("Chịu thôi...")
         # Check nếu là admin (chạy code ở dưới)
         if message.content.startswith('t!clear'):
             con = message.content.split()
