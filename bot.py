@@ -66,11 +66,13 @@ async def on_message(message):
                 await message.channel.send("https://cdn.discordapp.com/attachments/665774320911515685/708879643922530405/CANH_SAT_CHINH_TA.png")
         if "làm sao để có quyền lực" in message.content.lower():
             await message.channel.send("Biết đâu được...?")
-            time.sleep(2)
+            time.sleep(1)
             if authorIsAdmin(message):
                 await message.channel.send("Mà khoan, bác có **quyền lực** rồi mà?")
             if authorIsBuNhin(message):
                 await message.channel.send("Bù nhìn à? Khó à nha....")
+            else:
+                await message.channel.send("Chịu thôi...")
         # Check nếu là admin (chạy code ở dưới)
         if message.content.startswith('t!clear'):
             con = message.content.split()
