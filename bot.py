@@ -64,6 +64,8 @@ async def on_message(message):
         if "update" in message.content.lower():
             if "?" in message.content.lower():
                 await message.channel.send("không biết bác có hỏi không, cơ mà có thì game sẽ update 2 tuần một lần, patch notes sẽ ra vào khoảng 0h sáng thứ 4 (giờ VN) - cũng là lúc cập nhật lên sóng.\n\nDù sao thì nếu chuẩn bị có update thì sẽ có thông báo ở #thông-báo nhé.")
+                time.sleep(1)
+                await message.channel.send("spam thì liệu đấy!")
         if "sai chính tả" in message.content.lower():
             if "bắt" in message.content.lower():
                 if "." in message.content.lower():
