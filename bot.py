@@ -61,11 +61,8 @@ async def on_message(message):
             await message.channel.send("UwU")
         if "owo" in message.content.lower():
             await message.channel.send("OwO")
-        #bổ trợ emoji
-        if "ryugiohhh" in message.content.lower():
-            await message.channel.send('https://i.imgur.com/IrzIeKa.png')
-        if "rhype" in message.content.lower():
-            await message.channel.send('https://i.imgur.com/EqCXElJ.png')
+        if "update" in message.content.lower():
+            await message.channel.send("không biết bác có hỏi không, cơ mà có thì game sẽ update 2 tuần một lần, patch notes sẽ ra vào khoảng 0h sáng thứ 4 (giờ VN) - cũng là lúc cập nhật lên sóng.\n\nDù sao thì nếu chuẩn bị có update thì sẽ có thông báo ở #thông-báo nhé.")
         if "sai chính tả" in message.content.lower():
             if "bắt" in message.content.lower():
                 if "." in message.content.lower():
