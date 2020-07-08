@@ -7,21 +7,10 @@ from discord.ext import commands
 
 inAdmin = os.environ['ADMIN']
 
-inDN = os.environ['BUNHIN']
-
 def authorIsAdmin(msg):
     identified = False
     for role in msg.author.roles:
         if (role.name == inAdmin):
-            identified = True
-            return True
-    if identified == False:
-        return False
-
-def authorIsBuNhin(msg):
-    identified = False
-    for role in msg.author.roles:
-        if (role.name == inDN):
             identified = True
             return True
     if identified == False:
@@ -75,8 +64,6 @@ async def on_message(message):
             time.sleep(1)
             if authorIsAdmin(message):
                 await message.channel.send("Mà khoan, bác có **quyền lực** rồi mà?")
-            if authorIsBuNhin(message):
-                await message.channel.send("Bù nhìn à? Khó à nha....")
         # Check nếu là admin (chạy code ở dưới)
         if message.content.startswith('t!clear'):
             con = message.content.split()
