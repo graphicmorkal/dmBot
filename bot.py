@@ -45,12 +45,6 @@ async def on_message(message):
             time.sleep(1)
             if authorIsAdmin(message):
                 await message.channel.send("Mà khoan, bác có **quyền lực** rồi mà?")
-        if "chxhcnvn" in message.content.lower() or "địt" in message.content.lower() or "lồn" in message.content.lower() or "cặc" in message.content.lower() or "3/" in message.content.lower():
-            await message.channel.send("Nhóm này đã bị điều tra bởi các cơ quan trực thuộc Bộ Công an (và/hoặc các tổ chức chính trị tương tự phục vụ cho nhà nước CHXHCNVN).")
-            time.sleep(10)
-            await message.channel.send("Cơ quan điều tra (CQĐT) khẳng định các thành viên trong này liên quan tới nhóm hoặc những cá nhân khác trong đây. CQĐT biết rõ tại sao các thành viên lại có mặt ở đây vào thời điểm này, tài khoản của họ không được thêm bởi một bên thứ ba mà chính họ tự tham gia vào đây qua đường dẫn của (những) người đứng đầu. Các nhân viên của CQĐT cũng xin khẳng định rằng những hành động chống phá Đảng và Nhà nước đã được thực hiện bởi các thành viên trong nhóm này.")
-            time.sleep(20)
-            await message.channel.send("Nhà nước CHXHCNVN cũng không quên khẳng định quyết tâm chiến thắng đại dịch Covid-19, nhấn mạnh chủ quyền không thể tranh cãi với quần đao Hoang Sa va Truong Sa, cung nhu tinh chinh nghia cua cuoc chien giai phong nguoi dan Campuchia khoi tham hoa diet chung Khmer Đo.")
         # Check nếu là admin (chạy code ở dưới)
         if message.content.startswith('t!clear'):
             con = message.content.split()
