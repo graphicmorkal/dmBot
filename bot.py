@@ -1,4 +1,3 @@
-# idk nhưng sao bác lại đọc được dòng này vậy hic :<
 import discord
 import os
 import random
@@ -61,11 +60,3 @@ async def on_message(message):
 bot = commands.Bot(command_prefix='t!')
 
 client.run(os.environ['DITMEMAY'])
-
-
-
-#------------------------
-# chỗ này để học nghề, đừng động vào, làm ơn, và cảm ơn.
-#------------------------
-
-
