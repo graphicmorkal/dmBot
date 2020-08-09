@@ -60,3 +60,7 @@ async def on_message(message):
 bot = commands.Bot(command_prefix='t!')
 
 client.run(os.environ['DITMEMAY'])
+
+# -Xmx1G -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode -XX:-UseAdaptiveSizePolicy -Xmn128M
+# C:\Program Files\Java\jre1.8.0_251\bin\javaw.exe
+# D:\Requim\Minecraft
