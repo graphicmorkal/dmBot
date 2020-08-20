@@ -19,7 +19,7 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    print("Sẵn sàng hoạt động!")
+    print("Sao phải print trong khi thằng làm bot chả bao giờ lên log!")
 
 @client.event
 async def on_message(message):
@@ -38,6 +38,7 @@ async def on_message(message):
         if "sai chính tả" in message.content.lower():
             if "bắt" in message.content.lower():
                 if "." in message.content.lower():
+                    await message.channel.send("Cảnh sát chính tả đây!")
                     await message.channel.send("https://cdn.discordapp.com/attachments/665774320911515685/708879643922530405/CANH_SAT_CHINH_TA.png")
         if "làm sao để có quyền lực" in message.content.lower():
             await message.channel.send("Biết đâu được...?")
