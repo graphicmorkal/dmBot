@@ -28,6 +28,8 @@ async def on_message(message):
     else:
         if "uwu" in message.content.lower():
             await message.channel.send("UwU")
+        if "war" in message.content.lower():
+            await message.channel.send("I see EVERYTHING... maybe.")
         if "owo" in message.content.lower():
             await message.channel.send("OwO")
         if "update" in message.content.lower():
