@@ -29,7 +29,7 @@ async def on_message(message):
         if "uwu" in message.content.lower():
             await message.channel.send("UwU")
         if "war" in message.content.lower():
-            await message.channel.send("I see EVERYTHING... maybe.")
+            await message.channel.send("I'm waching you...")
         if "owo" in message.content.lower():
             await message.channel.send("OwO")
         if "update" in message.content.lower():
