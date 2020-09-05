@@ -32,6 +32,8 @@ async def on_message(message):
             await message.channel.send("runete**RR**a")
         if "war " in message.content.lower():
             await message.channel.send("I'm waching you...")
+        if " war" in message.content.lower():
+            await message.channel.send("Hmmmmmm...")
         if "owo" in message.content.lower():
             await message.channel.send("OwO")
         if "update" in message.content.lower():
